@@ -1,7 +1,8 @@
 
 
-/*body {
-    background: #fff;
+body {
+    background-color: #dd765a;
+    /*background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,8 +11,8 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 2em 2em 4em;
+        */
 }
-*/
 
 h1.index{
     color: #6a5acd;
@@ -31,6 +32,7 @@ img {
     /* margin: 1.3em auto; */
     max-width: 100%;
 }
+
 
 
 .dropdown {
@@ -66,4 +68,37 @@ img {
 .Header {
     display: flex;
     align-items: center;
+}
+#IntroPage {
+    display: flex;
+    align-items: center;
+}
+
+.navBar {
+    display: flex;
+    /* min-width: 4600px; */
+    padding: 1px 400px;
+    align-items: right;
+}
+
+.Tickets {
+    background: #5f8be1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+.Ticket-options {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    vertical-align: middle;
+
 }
