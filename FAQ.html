@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adventure Realm</title>
+    <meta name="description" content="Adventure Realm's website">
+    <link rel="stylesheet" href="StyleSheets/main.css">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        input[type="radio"].toggle {
+            display: none;
+        }
+
+        .radio-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .question-label {
+            cursor: pointer;
+        }
+
+        .content-container {
+            position: relative;
+            min-height: 2em;
+        }
+
+        input[type="radio"].toggle:checked+.hide {
+            position: absolute;
+            display: block;
+            left: 450px;
+        }
+
+        input[type="radio"].toggle:checked {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Header">
+        <div class="dropdown">
+            <button><img src="logo.jpg" alt="Adventure Realm Logo"></button>
+            <div class="dropdown-content">
+                <a href="index.html">Main</a>
+                <a href="Tickets.html">Tickets</a>
+                <a href="Ride Info.html">Ride Info</a>
+                <a style="background-color:#f80d0d;" href="FAQ.html">FAQ</a>
+            </div>
+        </div>
+        <h1 class="Name">Adventure Realm</h1><br>
+    </div>
+    <div class="navBar">
+        <a href="Tickets.html"> <button>Tickets</button> </a>
+        <a href="#"> <button>About Us</button></a>
+        <a href="#"> <button>Career</button></a>
+        <a href="FAQ.html"> <button style="background-color:#f80d0d;">FAQ</button></a>
+        <a href="#"> <button>Social Media</button></a>
+        <a href="#"> <button>Contact Us</button></a>
+    </div>
+
+    <div class="radio-container">
+        <label for="toggle-btn-1" class="question-label">What are the operating hours for Adventure Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-1" class="toggle">
+        <div class="hide">
+            <p>Adventure Land is open daily from 10:00 AM to 8:00 PM, with extended hours during holidays and special
+                events. Be sure
+                to check our Park Hours section on the website for the most up-to-date information.</p>
+        </div>
+        <label for="toggle-btn-2" class="question-label">Are there height or age restrictions for any
+            attractions?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-2" class="toggle">
+        <div class="hide">
+            <p>Yes, some attractions have minimum height and/or age requirements for safety reasons. These restrictions
+                are
+                clearly posted at each attraction and can also be found in the Attraction Details section on our
+                website.</p>
+        </div>
+
+        <label for="toggle-btn-3" class="question-label">Is the park wheelchair accessible?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-3" class="toggle">
+        <div class="hide">
+            <p>Absolutely! Adventure Land is committed to providing an enjoyable experience for all guests. Our park has
+                ramps,
+                accessible rides, and designated wheelchair seating areas in show venues.</p>
+        </div>
+
+        <label for="toggle-btn-4" class="question-label">Can I bring my own food and drinks into the park?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-4" class="toggle">
+        <div class="hide">
+            <p>Outside food and drinks are not permitted inside the park, but we offer a variety of dining options to
+                cater to
+                different dietary preferences. However, guests with specific dietary needs may bring their own food,
+                subject to
+                park guidelines.</p>
+        </div>
+
+        <label for="toggle-btn-5" class="question-label">Are there lockers available for rent?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-5" class="toggle">
+        <div class="hide">
+            <p>Yes, lockers can be rented near the park entrance for a small fee of $5 for small lockers and $8 for
+                large
+                lockers. They are available on a first-come, first-served basis.</p>
+        </div>
+
+        <label for="toggle-btn-6" class="question-label">Are there any discounts for group bookings or special
+            occasions?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-6" class="toggle">
+        <div class="hide">
+            <p>Adventure Land offers group discounts for parties of 15 or more, as well as special packages for
+                birthdays,
+                school trips, and corporate events. Please visit the Group Events section on our website for more
+                information.
+            </p>
+        </div>
+
+        <label for="toggle-btn-7" class="question-label">What should I wear to Adventure Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-7" class="toggle">
+        <div class="hide">
+            <p>We recommend wearing comfortable clothing and shoes, as you'll be walking and exploring throughout the
+                day. Keep
+                in mind that some attractions may involve water, so it's advisable to pack a change of clothes or a
+                poncho if
+                needed.</p>
+        </div>
+
+        <label for="toggle-btn-8" class="question-label">Is there a lost and found service available?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-8" class="toggle">
+        <div class="hide">
+            <p>Yes, any lost items or found items can be reported at our guest services desk near the park entrance.
+                While we do
+                our best to reunite lost items with their owners, Adventure Land is not responsible for lost or stolen
+                items.
+            </p>
+        </div>
+
+        <label for="toggle-btn-9" class="question-label">Can I re-enter the park if I leave during the day?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-9" class="toggle">
+        <div class="hide">
+            <p>Yes, you may leave and re-enter the park on the same day. Just make sure to keep your admission ticket or
+                wristband for re-entry.</p>
+        </div>
+
+        <label for="toggle-btn-10" class="question-label">Are pets allowed inside Adventure Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-10" class="toggle">
+        <div class="hide">
+            <p>Pets are not permitted inside the park, with the exception of service animals for guests with
+                disabilities.
+                Please ensure your service animal is properly identified and leashed at all times.</p>
+        </div>
+
+        <label for="toggle-btn-11" class="question-label">How do I get to Adventure Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-11" class="toggle">
+        <div class="hide">
+            <p>Adventure Land is conveniently located at 1234 Adventure Lane, easily accessible by car and public
+                transportation. If driving, take exit 6 off Highway Adventure. For public transit, you can take the
+                Adventure
+                Bus line to the Adventure Stop. Detailed directions and parking information are available in the
+                Location &
+                Parking section on our website.</p>
+        </div>
+
+        <label for="toggle-btn-12" class="question-label">What are the costs for admission and rides at Adventure
+            Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-12" class="toggle">
+        <div class="hide">
+            <p>Adventure Land offers various ticketing options, including single-day and multi-day passes, as well as
+                season
+                pass memberships. Adult single-day tickets are priced at $45, while children (aged 3-12) and senior
+                citizens
+                (aged 65+) tickets are priced at $35. Most attractions and rides are included with park admission, but
+                some
+                premium experiences may require an additional fee. See our Ticket Pricing & Information section for more
+                details.</p>
+        </div>
+
+        <label for="toggle-btn-13" class="question-label">What rides and attractions are available at Adventure
+            Land?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-13" class="toggle">
+        <div class="hide">
+            <p>Adventure Land offers a diverse range of rides and attractions designed to cater to all age groups and
+                interests.
+                These include roller coasters like the Thundering Titan, water rides such as Splash Mountain,
+                interactive play
+                areas, scenic tours on the Adventure Express, live shows, and more. Explore our Attractions & Rides
+                section for
+                a full list of offerings.</p>
+        </div>
+
+        <label for="toggle-btn-14" class="question-label">What age range is Adventure Land suitable for?</label>
+        <input type="radio" name="toggle-group" id="toggle-btn-14" class="toggle">
+        <div class="hide">
+            <p>Adventure Land has something for everyone, regardless of age! We strive to provide an enjoyable
+                experience for
+                guests of all ages, from toddlers to seniors. Our attractions and entertainment options cater to a
+                variety of
+                interests and thrill levels, ensuring that every member of your family or group will find something they
+                enjoy.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
