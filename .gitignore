@@ -1,0 +1,82 @@
+# General files to ignore
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Sensitive data and secrets
+*.key
+*.pem
+*.cert
+*.jks
+*.json
+*.env
+secrets/
+config/
+
+# Build artifacts and generated files
+/build/
+/dist/
+/out/
+/target/
+
+# Dependency directories
+node_modules/
+vendor/
+
+# IDE files and config
+.idea/
+.vscode/
+*.iml
+*.project
+*.sln
+*.user
+
+# Language and framework specific files
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Java
+*.class
+
+# Ruby
+*.gem
+*.rbc
+/vendor/bundle/
+
+# Compiled C/C++ files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.dylib
+
+# macOS specific files
+*.app
+*.dmg
+*.pkg
+.Icon/
+
+# Windows specific files
+*.exe
+*.dll
+*.sys
+*.drv
+*.pdb
+*.idb
+-debug/
+-bin/
+-obj/
+*.ilk
+
+# Linux specific files
+*.a
+*.ko
+*.so
+*.out
+*.mod.c
