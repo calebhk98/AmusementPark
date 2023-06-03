@@ -102,3 +102,34 @@ img {
     vertical-align: middle;
 
 }
+.hide {
+    display: none;
+}
+
+input[type="radio"].toggle {
+    display: none;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-label {
+    cursor: pointer;
+}
+
+.content-container {
+    position: relative;
+    min-height: 2em;
+}
+
+input[type="radio"].toggle:checked+.hide {
+    position: absolute;
+    display: block;
+    left: 450px;
+}
+
+input[type="radio"].toggle:checked {
+    color: aqua;
+}
